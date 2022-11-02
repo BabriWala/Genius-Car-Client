@@ -9,6 +9,7 @@ const Header = () => {
         <li className="font-semibold"><Link to={'/services'}>Services</Link></li>
         <li className="font-semibold"><Link to={'/blog'}>Blog</Link></li>
         <li className="font-semibold"><Link to={'/contact'}>Contact</Link></li>
+        <li className="font-semibold"><Link to={'/login'}>Login</Link></li>
     </>
   return (
     <div className="navbar bg-base-100 h-24 pt-12 overflow-hidden mb-8">

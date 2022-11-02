@@ -5,7 +5,7 @@ import { BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <footer className="footer py-32 px-36 bg-[#151515] text-white">
+    <footer className="footer py-20 lg:py-32 px-2 lg:px-36 bg-[#151515] text-white">
       <div>
         <img src={logo} alt="Logo" />
         <p>
@@ -23,18 +23,18 @@ const Footer = () => {
         </span>
       </div>
       <div>
-        <span className="font-semibold text-xl mb-10 text-white">Services</span>
+        <span className="font-semibold text-xl mb-3 lg:mb-10 text-white">Services</span>
         <a href='/'className="link link-hover">Home</a>
         <a href='/'className="link link-hover">Service</a>
         <a href='/'className="link link-hover">Contact</a>
       </div>
       <div>
-        <span className="font-semibold text-xl mb-10 text-white">Company</span>
+        <span className="font-semibold text-xl mb-3 lg:mb-10 text-white">Company</span>
         <a href='/'className="link link-hover">Why Car Doctor</a>
         <a href='/'className="link link-hover">About</a>
       </div>
       <div>
-        <span className="font-semibold text-xl mb-10 text-white">Support</span>
+        <span className="font-semibold text-xl mb-3 lg:mb-10 text-white">Support</span>
         <a href='/'className="link link-hover">Support Center</a>
         <a href='/'className="link link-hover">Feedback</a>
         <a href='/'className="link link-hover">Accesbility</a>

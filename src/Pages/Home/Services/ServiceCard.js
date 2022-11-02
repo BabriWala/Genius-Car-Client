@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 
 const ServiceCard = ({service}) => {
@@ -13,7 +14,7 @@ const ServiceCard = ({service}) => {
         <h2 className="card-title">{title}</h2>
         <div className="card-actions justify-between text-xl text-[#FF3811] font-semibold">
         <span>Price: ${price}</span>
-          <button className=""><AiOutlineArrowRight/></button>
+          <Link to={`/checkout/${service._id}`}><button className=""><AiOutlineArrowRight/></button></Link>
         </div>
       </div>
     </div>

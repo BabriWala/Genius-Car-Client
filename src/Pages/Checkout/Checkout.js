@@ -5,7 +5,7 @@ import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 const Checkout = () => {
   const { title, price, _id } = useLoaderData();
   const { user } = useContext(AuthContext);
-//   console.log(user)
+  //   console.log(user)
 
   const handlePlaceOrder = (event) => {
     event.preventDefault();
@@ -24,29 +24,27 @@ const Checkout = () => {
       phone,
       message,
     };
-    
+
     // if(phone.length < 11){
     //     alert('Kindly give 11 chracters phone number');
     // }
 
-    fetch('http://localhost:5000/orders',{
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(order)
+    fetch("http://localhost:5000/orders", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(order),
     })
-    .then(res => res.json())
-    .then(data=> {
-        console.log(data)
-        if(data.acknowledged){
-            alert('Order Placed Successfully')
-            form.reset();
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.acknowledged) {
+          alert("Order Placed Successfully");
+          form.reset();
         }
-    })
-    .then(err => console.error(err))
-
-
+      })
+      .then((err) => console.error(err));
   };
 
   return (
